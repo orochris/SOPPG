@@ -231,12 +231,10 @@ The adapter hand-off is an interface between stages.
 
 And the final prompt is not the source of truth for the character. It is a compiled representation of one.
 
-This is why the project is called what it is.
+This is why the project is called what it is — **SOPPG**.
 
-Not because it literally compiles code.
+I am deliberately naming this project with an acronym of its embryonic form. **No, SOPPG is not a Prompt Generator.**
 
-Because once the work was separated into representations, transformations, constraints, targets, and artifacts, **“Persona Compiler” turned out to be a considerably better description of the underlying idea than “prompt generator.”**
-
-And SOPPG is still here because apparently I had already named the embryonic thing before realizing what it was becoming.
+That is, among other things, a small nod to LLVM.
 
 **Build the character first. Then build the prompt.**
