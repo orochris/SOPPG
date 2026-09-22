@@ -1,0 +1,12 @@
+## Trying SOPPG with ChatGPT
+
+The easiest way to try SOPPG in ChatGPT is deliberately crude:
+
+1. Copy the Markdown files into your ChatGPT Library.
+2. Start a new chat.
+3. Paste the meta-meta prompt.
+4. Specify a character.
+
+That’s it.
+
+The files provide the process specification and its intermediate artifacts; the meta-meta prompt tells ChatGPT how to use them. You do not need to manually reconstruct the workflow in the chat itself.
