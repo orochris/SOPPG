@@ -1,6 +1,9 @@
 Date: 2026-09-23
+
 SOPPG version: 
+
 Deployment: ChatGPT Project
+
 Target character: Draco Malfoy from Harry Potter series, especially female versions of him from fanfictions
 
 ---
