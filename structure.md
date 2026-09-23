@@ -5,5 +5,5 @@ SOPPG/
 ├── ...
 
 
-logs/ 
+log/ 
 Stores complete process logs of SOPPG operations.
