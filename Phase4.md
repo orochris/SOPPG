@@ -1,5 +1,5 @@
-# Persona Builder — Phase 4: Sample Generation Assessment-Driven Audit
-### v0.3 — Runtime Evidence → Audit → Disposition
+# SOPPG — Phase 4 
+## Sample Generation Assessment-Driven Audit
 
 ---
 
