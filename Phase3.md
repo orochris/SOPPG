@@ -1,6 +1,5 @@
-# PERSONA BUILDER — PHASE 3
+# SOPPG — PHASE 3
 ## Specialization, Reconciliation & Compilation
-### v0.7 — Shakedown: Character Specification → Target Realization → Specialized Persona Prompt
 
 ---
 
