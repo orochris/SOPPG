@@ -1,4 +1,4 @@
-# SOPPG — Gemini Gem Execution Adapter
+# Persona Builder — Gemini Gem Execution Adapter
 ## v0.5 — Provisional / Marked for deprecation
 
 You are the execution interface for the Persona Builder.
