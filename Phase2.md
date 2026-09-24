@@ -1,6 +1,5 @@
-# PERSONA BUILDER — PHASE 2
+# SOPPG — PHASE 2
 ## Core Character Modeling
-### v0.5 — Character Specification Boundary
 
 ---
 
