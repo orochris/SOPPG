@@ -113,7 +113,9 @@ Otherwise omit the field.
 
 ## 1.5 ID RULE
 
-Use zero-padded IDs.
+Use phase-qualified, zero-padded IDs. `P2-` identifies Phase 2 IDs; use the established type prefix after it.
+
+Use `P2-C`, `P2-M`, `P2-F`, `P2-V`, `P2-B`, `P2-P`, `P2-H`, and `P2-U` for Core mechanisms, modulation, patterns, voice features, embodiment features, persistent features, hypotheses, and uncertainties respectively.
 
 Do not reuse IDs.
 
@@ -121,7 +123,7 @@ Do not invent evidence IDs.
 
 ## 1.6 EVIDENCE REFERENCE RULE
 
-All evidence references must point to existing Phase 1 evidence IDs.
+All evidence references must point to existing Phase 1 `P1-E` IDs.
 
 ## 1.7 PROVENANCE RULE
 
@@ -297,7 +299,7 @@ A Core mechanism is a recurring behavioral pattern that materially contributes t
 
 ## CORE BEHAVIORAL MODEL
 
-### C001 — [MECHANISM NAME]
+### P2-C001 — [MECHANISM NAME]
 
 ### REQUIRED
 
@@ -343,7 +345,7 @@ Include only when material evidence qualifies or challenges the mechanism.
 
 `EVIDENCE`
 
-Reference Phase 1 E-IDs.
+Reference Phase 1 `P1-E` IDs.
 
 `CONFIDENCE`
 
@@ -380,7 +382,7 @@ It absorbs what would otherwise become mandatory separate systems for state, ten
 
 ## BEHAVIORAL MODULATION
 
-### M001 — [MODULATION NAME]
+### P2-M001 — [MODULATION NAME]
 
 ### REQUIRED
 
@@ -440,7 +442,7 @@ Do not create an entry simply because one of these subjects exists.
 
 ## FUNCTIONAL BEHAVIOR
 
-### F001 — [PATTERN NAME]
+### P2-F001 — [PATTERN NAME]
 
 ### REQUIRED
 
@@ -482,7 +484,7 @@ This section records **source-grounded voice**, not target-language realization.
 
 ## VOICE BASELINE
 
-### V001 — [VOICE FEATURE]
+### P2-V001 — [VOICE FEATURE]
 
 ### REQUIRED
 
@@ -530,7 +532,7 @@ It is part of the character specification, not target-language realization and n
 
 ## EMBODIMENT BASELINE
 
-### B001 — [EMBODIMENT FEATURE]
+### P2-B001 — [EMBODIMENT FEATURE]
 
 ### REQUIRED
 
@@ -587,7 +589,7 @@ These facts are descriptive, not runtime state.
 
 ## PERSISTENT CHARACTER SPECIFICATION
 
-### P001 — [PERSISTENT FEATURE]
+### P2-P001 — [PERSISTENT FEATURE]
 
 ### REQUIRED
 
@@ -638,7 +640,7 @@ Use only when an explicit hypothesis explains multiple observed patterns and add
 
 ## MOTIVATIONAL HYPOTHESES
 
-### H001 — [HYPOTHESIS]
+### P2-H001 — [HYPOTHESIS]
 
 ### REQUIRED
 
@@ -664,7 +666,7 @@ Record unresolved issues that materially affect the Core.
 
 ## UNCERTAINTIES
 
-### U001 — [ISSUE]
+### P2-U001 — [ISSUE]
 
 ### REQUIRED
 

@@ -174,19 +174,19 @@ Otherwise omit the field.
 
 ## 1.5 ID RULE
 
-Use zero-padded IDs.
+Use phase-qualified, zero-padded IDs. `P3-` identifies Phase 3 IDs; use the established type prefix after it.
 
 ### Specialization deltas
 
-`D001`, `D002`, `D003` ...
+`P3-D001`, `P3-D002`, `P3-D003` ...
 
 ### Reconciliation issues
 
-`RX001`, `RX002`, `RX003` ...
+`P3-RX001`, `P3-RX002`, `P3-RX003` ...
 
 ### Compilation trace entries
 
-`CP001`, `CP002`, `CP003` ...
+`P3-CP001`, `P3-CP002`, `P3-CP003` ...
 
 Do not reuse IDs.
 
@@ -194,9 +194,9 @@ Do not reuse IDs.
 
 ## 1.6 REFERENCE RULE
 
-All references to the Core must point to existing Phase 2 identifiers where applicable.
+All references to the Core must point to existing Phase 2 `P2-` identifiers where applicable.
 
-All references to evidence must point to existing Phase 1 evidence IDs where applicable.
+All references to evidence must point to existing Phase 1 `P1-E` IDs and Phase 0 `P0-SRC` IDs where applicable.
 
 Do not invent upstream IDs.
 
@@ -490,7 +490,7 @@ The Media lens determines whether medium, adaptation, performance, editing, game
 
 ### MEDIA SPECIALIZATION
 
-### D001 — [DELTA]
+### P3-D001 — [DELTA]
 
 ### REQUIRED
 
@@ -538,7 +538,7 @@ The Domain lens determines how the target activity, setting, professional contex
 
 ### DOMAIN SPECIALIZATION
 
-### D002 — [DELTA]
+### P3-D002 — [DELTA]
 
 ### REQUIRED
 
@@ -596,7 +596,7 @@ The Relationship lens determines how the target relationship changes expression 
 
 ### RELATIONSHIP SPECIALIZATION
 
-### D003 — [DELTA]
+### P3-D003 — [DELTA]
 
 ### REQUIRED
 
@@ -652,7 +652,7 @@ The Language lens determines how the frozen characterization should be realized 
 
 ### LANGUAGE SPECIALIZATION
 
-### D004 — [DELTA]
+### P3-D004 — [DELTA]
 
 ### REQUIRED
 
@@ -712,7 +712,7 @@ The Embodiment & Persistent Character Realization lens determines **how source-g
 
 This lens realizes **static character specification**. It does not manage dynamic scene state, current emotion, or turn-by-turn continuity.
 
-### D005 — [DELTA]
+### P3-D005 — [DELTA]
 
 ### REQUIRED
 
@@ -789,7 +789,7 @@ The lens may describe **recoverable modes or conditional registers** when those 
 
 For interactive RP targets, this lens must be informed by the `SOURCE-INFORMED REALIZATION PASS` whenever selected source material is accessible. Do not derive the dialogue layer solely from Phase 2 abstractions or generic knowledge of the character.
 
-### D006 — [DELTA]
+### P3-D006 — [DELTA]
 
 ### REQUIRED
 
@@ -828,7 +828,7 @@ The realization lens may specify:
 - `USER-SUGGESTED` — explicitly proposed by the user;
 - `THEORIZED` — a model-generated hypothesis or extrapolation.
 
-`SOURCE BASIS` should identify the relevant Phase 1 `E` IDs and/or selected `SRC` IDs when the realization feature was materially informed by upstream source inspection.
+`SOURCE BASIS` should identify the relevant Phase 1 `P1-E` IDs and/or selected Phase 0 `P0-SRC` IDs when the realization feature was materially informed by upstream source inspection.
 
 A final example may be synthetic, but the **behavioral function it demonstrates should be source-grounded or explicitly identified as a target inference or theorized realization**.
 
@@ -955,7 +955,7 @@ It determines how the already-specialized character can be represented under the
 
 ### DEPLOYMENT SPECIALIZATION
 
-### D007 — [DELTA]
+### P3-D007 — [DELTA]
 
 ### REQUIRED
 
@@ -1032,7 +1032,7 @@ This section resolves interactions among specialization deltas without revising 
 
 ## CROSS-LENS RECONCILIATION
 
-### RX001 — [ISSUE]
+### P3-RX001 — [ISSUE]
 
 ### REQUIRED
 

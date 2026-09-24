@@ -99,11 +99,11 @@ Do not create empty descriptions simply because a field exists.
 
 ## 1.5 ID RULE
 
-Use:
+Use phase-qualified, zero-padded IDs:
 
-`SRC001`, `SRC002`, `SRC003` ...
+`P0-SRC001`, `P0-SRC002`, `P0-SRC003` ...
 
-Do not reuse source IDs within the Phase 0 artifact.
+The `P0-` namespace identifies Phase 0. Do not reuse an ID within the artifact.
 
 ## 1.6 AUTHORITY / VALUE RULE
 
@@ -209,7 +209,7 @@ Identify accessible primary or official sources first.
 
 ## PRIMARY SOURCES
 
-### SRC001 — [SOURCE NAME]
+### P0-SRC001 — [SOURCE NAME]
 
 ### REQUIRED
 
@@ -254,7 +254,7 @@ Search deliberately for high-value secondary material.
 
 ## SECONDARY / RESEARCH SOURCES
 
-### SRC010 — [SOURCE NAME]
+### P0-SRC010 — [SOURCE NAME]
 
 ### REQUIRED
 
@@ -349,31 +349,31 @@ Map sources by research function.
 
 ### CANON / PRIMARY
 
-- [SRC IDs]
+- [P0-SRC IDs]
 
 ### BEHAVIOR
 
-- [SRC IDs]
+- [P0-SRC IDs]
 
 ### VOICE / DIALOGUE
 
-- [SRC IDs]
+- [P0-SRC IDs]
 
 ### RELATIONSHIPS
 
-- [SRC IDs]
+- [P0-SRC IDs]
 
 ### DEVELOPMENT / TEMPORAL
 
-- [SRC IDs]
+- [P0-SRC IDs]
 
 ### ADAPTATION / VERSION
 
-- [SRC IDs]
+- [P0-SRC IDs]
 
 ### DISCOVERY / SCENE NAVIGATION
 
-- [SRC IDs]
+- [P0-SRC IDs]
 
 A source may appear in multiple roles.
 
@@ -435,7 +435,7 @@ Do not create a group merely to fill the structure.
 
 Each source in the handoff uses:
 
-### SRC001 — [SOURCE NAME]
+### P0-SRC001 — [SOURCE NAME]
 
 - KEEP / REMOVE:
 - PRIORITY:
@@ -558,7 +558,7 @@ Identify important research needs for which no strong source was found.
 
 ## SOURCE GAPS
 
-### GAP001 — [RESEARCH NEED]
+### P0-GAP001 — [RESEARCH NEED]
 
 ### REQUIRED
 
@@ -583,7 +583,7 @@ Do not resolve them into characterization.
 
 ## SOURCE CONFLICTS
 
-### C001 — [CONFLICT]
+### P0-C001 — [CONFLICT]
 
 ### REQUIRED
 

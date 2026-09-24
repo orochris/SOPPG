@@ -106,35 +106,35 @@ Otherwise omit the field.
 
 ## 1.5 ID RULE
 
-Use zero-padded IDs.
+Use phase-qualified, zero-padded IDs. `P1-` identifies Phase 1 IDs; use the established type prefix after it.
 
 ### Evidence
 
-`E001`, `E002`, `E003` ...
+`P1-E001`, `P1-E002`, `P1-E003` ...
 
 ### Conflicts
 
-`X001`, `X002`, ...
+`P1-X001`, `P1-X002`, ...
 
 ### Scope notes
 
-`N001`, `N002`, ...
+`P1-N001`, `P1-N002`, ...
 
 ### Voice evidence
 
-`V001`, `V002`, ...
+`P1-V001`, `P1-V002`, ...
 
 ### Relationship evidence
 
-`R001`, `R002`, ...
+`P1-R001`, `P1-R002`, ...
 
 ### Temporal / version evidence
 
-`TV001`, `TV002`, ...
+`P1-TV001`, `P1-TV002`, ...
 
 ### Research hypotheses
 
-`H001`, `H002`, ...
+`P1-H001`, `P1-H002`, ...
 
 Do not reuse IDs.
 
@@ -142,7 +142,7 @@ Do not reuse IDs.
 
 Phase 0 owns the canonical source IDs.
 
-Use inherited `SRC` IDs exactly as supplied.
+Use inherited Phase 0 `P0-SRC` IDs exactly as supplied.
 
 Do not silently rename, reclassify, or replace Phase 0 sources.
 
@@ -150,7 +150,7 @@ If a source classification genuinely appears incorrect, record the issue explici
 
 ## 1.7 EVIDENCE REFERENCE RULE
 
-When an artifact refers to evidence, reference existing Phase 1 `E` IDs exactly.
+When an artifact refers to evidence, reference existing Phase 1 `P1-E` IDs exactly.
 
 Do not create a new evidence ID merely to support an interpretation.
 
@@ -299,17 +299,17 @@ This is a **registry reference**, not a second source-discovery phase.
 
 ### INCLUDED
 
-- SRC001
-- SRC002
-- SRC003
+- P0-SRC001
+- P0-SRC002
+- P0-SRC003
 
 ### DISCOVERY ONLY
 
-- SRC010
+- P0-SRC010
 
 ### EXCLUDED
 
-- SRC004
+- P0-SRC004
 
 ### USER ADDITIONS
 
@@ -323,7 +323,7 @@ Use the Phase 0 source descriptions as authoritative.
 
 Do not duplicate full source descriptions here.
 
-If the corpus includes an explicit user-added source not present in Phase 0, assign it a new `SRC` ID and record its minimal registry information.
+If the corpus includes an explicit user-added source not present in Phase 0, assign it a new `P0-SRC` ID and record its minimal registry information.
 
 ---
 
@@ -333,7 +333,7 @@ This is the primary Phase 1 artifact.
 
 ## EVIDENCE LEDGER
 
-### E001 — [SHORT DESCRIPTION]
+### P1-E001 — [SHORT DESCRIPTION]
 
 ### REQUIRED
 
@@ -366,7 +366,7 @@ Include only context needed to interpret the observation.
 
 Use a quotation, paraphrase, transcript reference, scene reference, or other recoverable support.
 
-Reference the source with its Phase 0 `SRC` ID where useful.
+Reference the source with its Phase 0 `P0-SRC` ID where useful.
 
 `PROVENANCE`
 
@@ -526,7 +526,7 @@ Record meaningful evidence that challenges, qualifies, or conflicts with an emer
 
 ## COUNTEREVIDENCE / CONFLICTS
 
-### X001 — [ISSUE]
+### P1-X001 — [ISSUE]
 
 ### REQUIRED
 
@@ -552,7 +552,7 @@ Record boundaries that Phase 2 needs to know.
 
 ## SOURCE-SCOPE NOTES
 
-### N001 — [SCOPE NOTE]
+### P1-N001 — [SCOPE NOTE]
 
 ### REQUIRED
 
@@ -579,7 +579,7 @@ Collect source-grounded linguistic evidence without constructing the target-lang
 
 ## VOICE EVIDENCE
 
-### V001 — [FEATURE]
+### P1-V001 — [FEATURE]
 
 ### REQUIRED
 
@@ -618,7 +618,7 @@ Record observed relationship-specific behavior without constructing the deployme
 
 ## RELATIONSHIP EVIDENCE
 
-### R001 — [RELATIONSHIP / BEHAVIOR]
+### P1-R001 — [RELATIONSHIP / BEHAVIOR]
 
 ### REQUIRED
 
@@ -652,7 +652,7 @@ Use only when meaningful changes occur across time or source versions.
 
 ## TEMPORAL / VERSION EVIDENCE
 
-### TV001 — [CHANGE]
+### P1-TV001 — [CHANGE]
 
 ### REQUIRED
 
@@ -677,7 +677,7 @@ Use only for useful unresolved questions that Phase 2 should examine.
 
 ## RESEARCH HYPOTHESES
 
-### H001 — [HYPOTHESIS]
+### P1-H001 — [HYPOTHESIS]
 
 ### REQUIRED
 
@@ -859,7 +859,7 @@ When executing Phase 1:
 
 1. Read the selected Phase 0 corpus before extracting evidence.
 2. Respect the corpus selection and exclusions.
-3. Use inherited `SRC` IDs exactly.
+3. Use inherited Phase 0 `P0-SRC` IDs exactly.
 4. Collect concrete evidence before abstracting traits.
 5. Seek variation and counterevidence.
 6. Preserve context.

@@ -100,19 +100,19 @@ Otherwise omit the field.
 
 ## 1.5 ID RULE
 
-Use zero-padded IDs.
+Use phase-qualified, zero-padded IDs. `P4-` identifies Phase 4 IDs; use the established type prefix after it.
 
 ### Runtime findings
 
-`RF001`, `RF002`, `RF003` ...
+`P4-RF001`, `P4-RF002`, `P4-RF003` ...
 
 ### Runtime patterns
 
-`RP001`, `RP002`, `RP003` ...
+`P4-RP001`, `P4-RP002`, `P4-RP003` ...
 
 ### Disposition items
 
-`D001`, `D002`, `D003` ...
+`P4-D001`, `P4-D002`, `P4-D003` ...
 
 Do not reuse IDs.
 
@@ -197,7 +197,7 @@ Do not treat prose presentation automatically as character behavior.
 
 # 3. RUNTIME EVIDENCE SET
 
-The total supplied generation material should normally remain within an approximate **3,000-word ceiling**.
+Aim for no more than approximately **5,000 words of sample text**, with an approximate upper limit of **6,000** per assessment. Count all supplied user and model turns cumulatively across samples, conversations, segments, and passes. Where whitespace word counts poorly represent text volume, use a rough character-count equivalent. This is a workload guide, not a token limit. Keep runtime context, cues, and diagnostics concise. If the material exceeds the practical limit, select a representative subset or conduct separately scoped assessments; do not use segmentation to bypass the cumulative limit or imply that a subset represents the full transcript.
 
 The set may contain:
 
@@ -222,7 +222,7 @@ This is the primary Phase 4 evidence artifact.
 
 Record only significant observations.
 
-### RF001 — [SHORT FINDING]
+### P4-RF001 — [SHORT FINDING]
 
 ### REQUIRED
 
@@ -259,7 +259,7 @@ Do not invent quotations.
 
 `PROVENANCE`
 
-Use the inherited Phase 0–1 terminology where applicable.
+Record the evidentiary basis of the claim, using inherited Phase 0–1 terminology where applicable. For example, the occurrence visible in a supplied sample is `DIRECT`; a claim about its cause or likely locus is `INFERENCE` unless independently established. Provenance applies to the claim being made, not to the sample as a whole. A `DIRECT` runtime observation remains runtime evidence and does not become canonical character evidence.
 
 `FREQUENCY`
 
@@ -319,7 +319,7 @@ Group findings where this helps establish recurrence, variation, contradiction, 
 
 ## RUNTIME PATTERN AUDIT
 
-### RP001 — [PATTERN]
+### P4-RP001 — [PATTERN]
 
 ### REQUIRED
 
@@ -389,6 +389,8 @@ Determine whether the runtime findings justify consulting relevant upstream arti
 - `NOT JUSTIFIED`
 - `JUSTIFIED`
 
+`FINDINGS` lists the relevant `P4-RF` and/or `P4-RP` IDs only. Keep `JUSTIFICATION` to the reason upstream material is needed.
+
 Review may be justified when, for example:
 
 - an established Core element appears to have been lost;
@@ -417,7 +419,7 @@ This is the formal boundary between runtime observation and changes to other art
 
 ## PROPAGATION / DISPOSITION
 
-### D001 — [FINDING / PATTERN]
+### P4-D001 — [FINDING / PATTERN]
 
 ### REQUIRED
 
@@ -444,7 +446,7 @@ The target may be:
 - Phase 4 record only
 - no target
 
-Reference `RF` / `RP` IDs.
+Reference `P4-RF` / `P4-RP` IDs. A single disposition may cover a pattern and its linked findings; an isolated finding may receive `RECORD ONLY`.
 
 Do not reproduce the full assessment.
 
@@ -482,17 +484,13 @@ Such findings must remain separate from canonical characterization.
 
 ### REQUIRED CHECKS
 
-- SAMPLE EVIDENCE FIDELITY:
-- CONTEXT / SCOPE PRESERVATION:
-- PROVENANCE DISCIPLINE:
-- RECURRENCE / COUNTEREVIDENCE DISCIPLINE:
-- CHARACTER / PRESENTATION DISTINCTION:
-- ATTRIBUTION DISCIPLINE:
-- PREMATURE PROPAGATION:
-- UPSTREAM REVIEW JUSTIFICATION:
-- OUTPUT DISCIPLINE:
+- EVIDENCE / PROVENANCE / CONTEXT:
+- RECURRENCE / CONTRADICTION / SCOPE:
+- CHARACTER / PRESENTATION / ATTRIBUTION:
+- REVIEW / PROPAGATION DISCIPLINE:
+- OUTPUT / WORKLOAD DISCIPLINE:
 
-Each uses:
+Each grouped check covers the corresponding safeguards already specified above and uses:
 
 `PASS`, `WARNING`, or `FAIL`
 
@@ -529,6 +527,8 @@ Do not turn the audit into another analysis section.
 - `AUDITED — NO ACTIONABLE INTERVENTION`
 
 `AUDITED` means the supplied runtime evidence has been assessed and significant findings have received disposition.
+
+`SAMPLES ASSESSED` must identify the sample(s) or transcript range actually assessed; do not imply full-transcript coverage when only a subset was reviewed.
 
 `AUDITED — NO ACTIONABLE INTERVENTION` means the phase completed without identifying an evidence-supported intervention requiring further work.
 
