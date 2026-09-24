@@ -200,6 +200,12 @@ All references to evidence must point to existing Phase 1 `P1-E` IDs and Phase 0
 
 Do not invent upstream IDs.
 
+### External realization packages
+
+An optional Gem Reconciliation & Realization Corpus may be supplied as a separate realization package. Preserve its `GRC-*` identifiers as package-local references; they are not Phase 0–2 identifiers, canonical evidence IDs, or approved upstream findings. A Gem Builder routing recommendation does not itself authorize propagation.
+
+Use an inspected and relevant `GRC-M` item as a realization reference only after checking its source, inspected material, locator, continuity, scope, and relationship to the frozen Core. Keep canonical evidence references (`P1-E` / `P0-SRC`) separate. If the package would add or change a characterization claim, conflicts materially with the Core, or lacks enough provenance to support the intended use, record the issue and route it for the appropriate SOPPG phase review; do not silently absorb it into Phase 3.
+
 ---
 
 ## 1.7 DELTA STATUS RULE
@@ -803,6 +809,7 @@ For interactive RP targets, this lens must be informed by the `SOURCE-INFORMED R
 
 - ORIGIN:
 - SOURCE BASIS:
+- GEM CORPUS REFERENCES:
 - DIALOGUE PATTERNS:
 - EXAMPLE VOICE LINES:
 - BEHAVIORAL QUIRKS:
@@ -1270,6 +1277,8 @@ Every material delta must identify:
 
 Use `UNKNOWN` when the basis is insufficient.
 
+`GEM CORPUS REFERENCES` may list relevant package-local `GRC-M` and `GRC-S` IDs. These references support realization selection and traceability; they do not replace `SOURCE BASIS` or establish canonical evidence status.
+
 ---
 
 # 12. CHARACTER STABILITY TEST
@@ -1284,7 +1293,7 @@ When executing Phase 3:
 
 1. Verify the frozen Phase 2 Character Specification.
 2. Establish target conditions.
-3. For interactive RP, perform targeted source-informed realization when accessible source material exists.
+3. For interactive RP, perform targeted source-informed realization when accessible source material exists; where an optional Gem corpus is supplied, inspect only relevant items and preserve their package-local provenance.
 4. Apply relevant specialization lenses as views over the same frozen input.
 5. Record substantive changes as typed deltas.
 6. Reconcile cross-lens interactions.
@@ -1309,6 +1318,7 @@ Do not:
 - force examples, quirks, or dialogue patterns as scripts;
 - present theorized material as canon;
 - require the downstream system to reconstruct Phase 3 analysis.
+- treat a Gem corpus routing recommendation or package-local `GRC` reference as SOPPG approval, canonical evidence, or permission to revise the frozen Core.
 
 Phase 3 produces:
 
