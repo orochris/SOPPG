@@ -77,7 +77,7 @@ For each YouTube item:
 
 - Record the exact video URL, visible title, channel/uploader, and original work/version when identifiable. Treat search results as leads, not inspected content.
 - State separately whether you opened the video, inspected visuals, heard audio, and accessed captions/transcript. Identify transcript language and whether captions are human-provided, automatic, user-supplied, or unknown when determinable.
-- For recovered material, give the timestamp interval and enough surrounding scene context to interpret it. If the player or transcript has no timestamp, state that limitation and give the closest available locator; do not invent timestamps. If only audio was inspected, do not claim visual behavior; if only visuals were inspected, do not claim dialogue or vocal qualities.
+- For recovered material, give enough locator detail and surrounding scene context to interpret it. When a retrieved transcript exposes timestamped lines or segments, the exact start timestamp attached to the relevant line/segment is sufficient; do not require an end timestamp or interval, and do not estimate or interpolate one. If the player or transcript exposes no timestamp, state that limitation and give the closest available locator; do not invent timestamps. If only audio was inspected, do not claim visual behavior; if only visuals were inspected, do not claim dialogue or vocal qualities.
 - Quote only wording actually available in an inspected or supplied transcript/audio. Mark translation, paraphrase, and uncertainty explicitly.
 - Treat comments, descriptions, titles, and fan summaries as secondary material, not as direct evidence of the video scene.
 - If the video or relevant segment cannot actually be accessed, retain it only as an uninspected candidate source and do not include its presumed contents in the Realization Corpus.
@@ -165,7 +165,7 @@ Describe the comparison without rewriting the upstream claim. A contradiction in
 Organize useful materials by research target or relevant upstream ID. Give each item a package-local ID such as `GRC-M001` and include:
 
 - SOURCE ID and exact URL / locator;
-- version / scene / timestamp interval where available, or the reason no time locator is available;
+- version / scene / timestamp or interval where available (a transcript line's exact start timestamp is sufficient), or the reason no time locator is available;
 - what was actually inspected;
 - source material: a concise excerpt, transcript segment, or faithful description of observed material;
 - surrounding context needed for interpretation;
