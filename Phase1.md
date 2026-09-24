@@ -1,6 +1,5 @@
-# PERSONA BUILDER — PHASE 1
+# SOPPG — PHASE 1
 ## Source Research & Evidence Modeling
-### v0.3 — Selected Corpus → Evidence
 
 ---
 
