@@ -1,6 +1,5 @@
-# PERSONA BUILDER — PHASE 0
+# SOPPG — PHASE 0
 ## Source Discovery & Research Planning
-### v0.2 — Prioritized Source Handoff
 
 ---
 
