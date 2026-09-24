@@ -6,4 +6,4 @@ SOPPG/
 
 
 log/ 
-Stores complete process logs of SOPPG operations.
+Stores complete process logs of SOPPG operations and their autopsy.
