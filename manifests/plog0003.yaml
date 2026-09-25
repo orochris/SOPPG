@@ -61,7 +61,7 @@ inputs:
     path: Phase3.md
     notes: "Phase 3 compilation instructions used by this workflow."
   - role: other
-    path: Phase4.md
+    path: Phase4_optional.md
     notes: "Phase 4 sample assessment instructions used for the runtime assessment."
 artifacts:
   - role: process_log

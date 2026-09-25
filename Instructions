@@ -1,12 +1,46 @@
-## Trying SOPPG with ChatGPT
+# Using SOPPG
 
-The easiest way to try SOPPG in ChatGPT is deliberately crude:
+## Essential materials
 
-1. Copy the Markdown files into your ChatGPT Library or Project sources.
-2. Start a new chat.
-3. Tell GPT to start from Initialprompt.md
-4. Specify a character.
+For the core workflow, have these files available:
 
-That’s it.
+1. `Phase0.md`
+2. `Phase1.md`
+3. `Phase2.md`
+4. `Phase3.md`
+5. `Initialprompt.md` — upload the file or copy and paste its contents
 
-The files provide the process specification and its intermediate artifacts; the meta-meta prompt tells ChatGPT how to use them. You do not need to manually reconstruct the workflow in the chat itself.
+The phase files describe the process. `Initialprompt.md` is the starting instruction for using them. When you begin, name the character and say which phase or outcome you want to work on. You can also specify continuity, scope, and the language you want for the process discussion.
+
+## Optional materials and ways to run SOPPG
+
+### Phase 4 sample assessment
+
+`Phase4_optional.md` is optional. Use it after deployment when you want to assess a bounded set of generated samples. It requires the relevant deployed prompt, sample generation, and available runtime context.
+
+### ChatGPT Library or Project
+
+Add the essential files to your Library or Project sources, then start a chat using `Initialprompt.md`.
+
+### Codex or a similar repository-aware assistant
+
+Clone the repository into a workspace the assistant can access:
+
+```sh
+git clone https://github.com/orochris/SOPPG.git
+```
+
+Open the cloned folder in Codex or a similar assistant and start from `Initialprompt.md`. The assistant can read the phase files directly from the workspace. Include `Phase4_optional.md` only when you want a Phase 4 sample assessment.
+
+### Other supporting materials
+
+These materials are not required for the core workflow. Add them only when they are useful for the task:
+
+- `gemadapter.md` and `gembuilder.md` — optional source-recovery and realization-corpus workflow.
+- `manifests/` — optional run receipts and artifact references.
+- `DeployedPrompts/` — optional examples of compiled prompts.
+- `logs/` — optional records for review or continuation of a particular run.
+- `README.md` and `structure.md` — project background and repository layout.
+- `old/` — historical or deprecated material.
+
+When sharing optional materials, identify what they are and how you want them used.
