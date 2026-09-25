@@ -25,8 +25,9 @@ Keep these language sets distinct:
 - **SPECIFICATION LANGUAGE** — the language in which this phase's rules and canonical schema are written (English in this specification). Preserve canonical section names, field names, IDs, and controlled values exactly as defined by the Phase specification. Explain them in the Working Language as needed; translation must not change the procedure or evidence standard.
 - **SOURCE LANGUAGE(S)** — the original language(s) of works and evidence sources. Record per source where known; retain original excerpts and identify translations or glosses as such.
 - **TARGET-REALIZATION LANGUAGE(S)** — intended persona/deployment language(s), determined separately. The Working Language does not set the target voice.
+- **PROMPT LANGUAGE** — the language(s) used to write the eventual compiled persona prompt. Default to English for general-user workflows, regardless of Working Language. An explicitly stated user preference overrides this default. Keep it separate from Target-Realization Language(s).
 
-Research and present evidence accessibly in the Working Language while preserving its original wording, provenance, and scope. Do not treat translation, localization, or a language choice by itself as character behavior; assess such effects as presentation or version evidence where relevant.
+Research and present evidence accessibly in the Working Language while preserving its original wording, provenance, and scope. Do not treat translation, localization, or a language choice by itself as character behavior; assess such effects as presentation or version evidence where relevant. Prompt-language preference may be recorded when explicitly supplied, but must not alter the evidence model.
 
 ---
 
@@ -289,8 +290,9 @@ Preserve conflicts instead of smoothing them away.
 ### OPTIONAL
 
 - WORKING LANGUAGE:
+- PROMPT LANGUAGE (IF SPECIFIED):
 
-Record it when explicitly selected, different from the default, or materially relevant to user-facing research presentation. It does not change the source corpus or source-language evidence.
+Record `WORKING LANGUAGE` when explicitly selected, different from the default, or materially relevant to user-facing research presentation. `PROMPT LANGUAGE` may be carried forward when explicitly specified; it does not change the source corpus or source-language evidence.
 
 ### SOURCE / WORK RULE
 

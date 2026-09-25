@@ -39,8 +39,9 @@ Keep these language sets distinct:
 - **SPECIFICATION LANGUAGE** — the language in which this phase's rules and canonical schema are written (English in this specification). Preserve canonical section names, field names, IDs, disposition values, and audit labels exactly as defined here. Explain them in the Working Language without changing their requirements.
 - **SOURCE LANGUAGE(S)** — languages of the deployed prompt's supporting sources, where consulted. Keep source quotations and their translations distinguishable.
 - **TARGET-REALIZATION LANGUAGE(S)** — language(s) actually intended and represented in the supplied generation sample. Assess that realization in context; do not treat the Working Language or source language as the deployed output language unless independently established.
+- **PROMPT LANGUAGE** — language(s) used by the compiled instructions. It defaults to English for general-user workflows unless the user explicitly selected another language. Treat this separately from the sample's target output language.
 
-When a user cue, prompt, and generation use different languages, record which language each uses when it materially affects interpretation. Assess observable meaning and pragmatic function, including localization effects where relevant, rather than judging equivalence by literal translation alone.
+When a user cue, prompt, and generation use different languages, record which language each uses when it materially affects interpretation. Assess observable meaning and pragmatic function, including localization effects where relevant, rather than judging equivalence by literal translation alone. A mismatch with the English prompt default is not itself a runtime defect when the user explicitly requested another Prompt Language.
 
 ---
 

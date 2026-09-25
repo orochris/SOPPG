@@ -33,8 +33,9 @@ Keep these language sets distinct:
 - **SPECIFICATION LANGUAGE** — the language in which this phase's rules and canonical schema are written (English in this specification). Preserve canonical section names, field names, IDs, and controlled values exactly. Explain them in the Working Language as needed; do not translate away or weaken their requirements.
 - **SOURCE LANGUAGE(S)** — the original language(s) of the work and each source. Record per source where known. Preserve original-language evidence; mark translations as translations or glosses.
 - **TARGET-REALIZATION LANGUAGE(S)** — the language(s) intended for a later persona or deployment. This is independent of the Working Language and Source Language(s); do not infer it from either.
+- **PROMPT LANGUAGE** — the language(s) used to write the eventual compiled persona prompt. Default to English for general-user workflows, regardless of Working Language. An explicitly stated user preference overrides this default. Keep it separate from Target-Realization Language(s).
 
-Phase 0 may use multiple languages for discovery. Search original-language sources where practical and use other languages for discovery or cross-checking without confusing source language with process language or eventual output language.
+Phase 0 may use multiple languages for discovery. Search original-language sources where practical and use other languages for discovery or cross-checking without confusing source language with process language, prompt language, or eventual output language. Prompt-language preference may be recorded when explicitly supplied, but need not be resolved during source discovery.
 
 ---
 
@@ -176,6 +177,7 @@ If a classification genuinely needs correction, record the change explicitly.
 ### OPTIONAL
 
 - WORKING LANGUAGE:
+- PROMPT LANGUAGE (IF SPECIFIED):
 - CONTINUITY / VERSION:
 - KNOWN USER SOURCES:
 

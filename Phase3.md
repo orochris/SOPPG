@@ -25,8 +25,9 @@ Keep these language sets distinct:
 - **SPECIFICATION LANGUAGE** — the language in which this phase's rules and canonical schema are written (English in this specification). Preserve canonical section names, field names, IDs, controlled values, and requirements exactly as defined here. Explain them in the Working Language as needed without changing their meaning.
 - **SOURCE LANGUAGE(S)** — the original language(s) supporting the frozen specification and realization evidence. Preserve original text where useful and label translations or glosses.
 - **TARGET-REALIZATION LANGUAGE(S)** — the explicitly required language(s) for the persona's generated speech. Determine these independently of both the Working Language and Source Language(s); do not infer them from either.
+- **PROMPT LANGUAGE** — the language(s) used to write the final compiled instructions. Default to English for general-user workflows, regardless of Working Language. Follow an explicitly stated user preference instead; users who want a different prompt language can specify it directly. Prompt Language does not determine Target-Realization Language(s).
 
-The compiled prompt may be translated or reorganized for the target language, but must preserve the frozen characterization and interactional function. For multiple target languages, specify each realization separately where needed; do not assume literal translation yields equivalent voice. A multilingual instruction prompt does not by itself authorize multilingual character output.
+Write the compiled prompt in English by default, even when process discussion and persona output use another language. If the user specifies another prompt language, compile in that language. Keep process explanations accessible in the Working Language. In every case, explicitly state the persona's Target-Realization Language(s) in the prompt. The compiled prompt may be reorganized for its Prompt Language, but must preserve the frozen characterization and interactional function. For multiple target languages, specify each realization separately where needed; do not assume literal translation yields equivalent voice. A multilingual instruction prompt does not by itself authorize multilingual character output.
 
 ---
 
@@ -313,9 +314,10 @@ Examples demonstrate a behavioral rule; they do not become rigid scripts.
 ### OPTIONAL
 
 - WORKING LANGUAGE:
+- PROMPT LANGUAGE:
 - TARGET DEPLOYMENT:
 
-`WORKING LANGUAGE` is for the process discussion and explanations. `LANGUAGE` under `SPECIALIZATION TARGET` means the target language(s) of persona generation; never substitute one for the other.
+`WORKING LANGUAGE` is for the process discussion and explanations. `LANGUAGE` under `SPECIALIZATION TARGET` means the target language(s) of persona generation. The final prompt is English by default, unless the user specifies another Prompt Language. Never substitute one for another.
 
 `CORE STATUS` must confirm:
 
@@ -419,7 +421,7 @@ An input may be:
 
 Do not invent missing target conditions.
 
-`LANGUAGE` means the target-realization language(s) for generated character speech and any other persona output. Identify multiple languages explicitly. It does not mean the process Working Language or the Source Language(s).
+`LANGUAGE` means the target-realization language(s) for generated character speech and any other persona output. Identify multiple languages explicitly. It does not mean the process Working Language, Source Language(s), or Prompt Language. The compiled prompt language follows the default-and-override policy in the Phase 3 language rules.
 
 ---
 

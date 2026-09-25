@@ -29,8 +29,9 @@ Keep these language sets distinct:
 - **SPECIFICATION LANGUAGE** — the language in which this phase's rules and canonical schema are written (English in this specification). Preserve canonical section names, field names, IDs, controlled values, and the rules defined here. Explanations may use the Working Language but must not alter the specification.
 - **SOURCE LANGUAGE(S)** — the original language(s) of the evidence. Preserve original-language voice evidence and identify translations or glosses. Record language-specific contradictions or adaptations as scoped uncertainties rather than averaging them.
 - **TARGET-REALIZATION LANGUAGE(S)** — intended later persona/deployment language(s), independent of the Working Language and excluded from the Core unless the fact itself is source-grounded character information.
+- **PROMPT LANGUAGE** — the language(s) used to write the eventual compiled persona prompt. Default to English for general-user workflows, regardless of Working Language. An explicitly stated user preference overrides this default. It is deployment metadata, not a character property.
 
-The Core is language-independent characterization, not an instruction to speak in the Working Language or a translated voice. Keep source-grounded voice distinct from later target-language realization.
+The Core is language-independent characterization, not an instruction to speak in the Working Language, Prompt Language, or a translated voice. Keep source-grounded voice distinct from later target-language realization. Prompt-language preference must not enter the Core.
 
 ---
 
