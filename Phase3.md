@@ -17,6 +17,19 @@ It must not silently rewrite the frozen Character Specification. Material disagr
 
 ---
 
+## LANGUAGE SETS AND PROCESS LANGUAGE
+
+Keep these language sets distinct:
+
+- **WORKING LANGUAGE** — default to the language of the user's initial target-character request, considered by language rather than by the character name or source title. Use it for user-facing process narration and explanations unless the user specifies another language. If materially multilingual and unclear, ask or state a minimal, reversible assumption.
+- **SPECIFICATION LANGUAGE** — the language in which this phase's rules and canonical schema are written (English in this specification). Preserve canonical section names, field names, IDs, controlled values, and requirements exactly as defined here. Explain them in the Working Language as needed without changing their meaning.
+- **SOURCE LANGUAGE(S)** — the original language(s) supporting the frozen specification and realization evidence. Preserve original text where useful and label translations or glosses.
+- **TARGET-REALIZATION LANGUAGE(S)** — the explicitly required language(s) for the persona's generated speech. Determine these independently of both the Working Language and Source Language(s); do not infer them from either.
+
+The compiled prompt may be translated or reorganized for the target language, but must preserve the frozen characterization and interactional function. For multiple target languages, specify each realization separately where needed; do not assume literal translation yields equivalent voice. A multilingual instruction prompt does not by itself authorize multilingual character output.
+
+---
+
 ## INPUTS
 
 ### Required
@@ -299,7 +312,10 @@ Examples demonstrate a behavioral rule; they do not become rigid scripts.
 
 ### OPTIONAL
 
+- WORKING LANGUAGE:
 - TARGET DEPLOYMENT:
+
+`WORKING LANGUAGE` is for the process discussion and explanations. `LANGUAGE` under `SPECIALIZATION TARGET` means the target language(s) of persona generation; never substitute one for the other.
 
 `CORE STATUS` must confirm:
 
@@ -402,6 +418,8 @@ An input may be:
 - unresolved.
 
 Do not invent missing target conditions.
+
+`LANGUAGE` means the target-realization language(s) for generated character speech and any other persona output. Identify multiple languages explicitly. It does not mean the process Working Language or the Source Language(s).
 
 ---
 

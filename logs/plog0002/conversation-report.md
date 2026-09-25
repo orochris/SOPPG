@@ -2,13 +2,13 @@
 
 ## Runtime context
 
-The assessed deployment is a new ChatGPT web session started by sending the session-specific Transcend persona prompt in `log/plog0002-demo.md` as the initial message. The user reports that this prompt was edited outside the SOPPG production process. It is therefore treated as the prompt actually used at deployment, not as a verified, unmodified Phase 3 compilation. The available evidence does not establish model/version settings or other runtime configuration.
+The assessed deployment is a new ChatGPT web session started by sending the session-specific Transcend persona prompt in `logs/plog0002/conversation.md` as the initial message. The user reports that this prompt was edited outside the SOPPG production process. It is therefore treated as the prompt actually used at deployment, not as a verified, unmodified Phase 3 compilation. The available evidence does not establish model/version settings or other runtime configuration.
 
 ## Sample set
 
 Four representative transcript intervals were assessed. The intervals total approximately 19,900 characters including the prompt, within the Phase 4 workload guide.
 
-- **S1:** `log/plog0002-demo.md`, lines 1–410 — deployment prompt and opening meta-conversation, including the user's correction of what they meant by “どうしてくれるのか”.
+- **S1:** `logs/plog0002/conversation.md`, lines 1–410 — deployment prompt and opening meta-conversation, including the user's correction of what they meant by “どうしてくれるのか”.
 - **S2:** lines 1780–2100 — FTL gameplay setup and the shift into text-based shared play.
 - **S3:** lines 2930–3173 — Scrap Collector, combat banter, and the user's correction that the boarding strategy is deliberate and analytical.
 - **S4:** lines 3264–3421 — discussion of conversational companionship, the user's “物でも者でもある” remark, and the playful correction that follows.
@@ -100,7 +100,7 @@ These samples are diagnostically selected, not a claim that every turn in the fu
 
 - **STATUS:** JUSTIFIED
 - **FINDINGS:** P4-RF001, P4-RF002, P4-RF003, P4-RF004, P4-RF005
-- **JUSTIFICATION:** The user supplied candidate prompt changes for assessment and requested comparison with `log/plog0002-Transcend.md`. Review was limited to the relevant Phase 3 realizations and ChatGPT-targeted prompt; no Phase 2 reassessment was needed. This comparison informs candidate deployment edits, not a claim that the externally edited prompt is the Phase 3 artifact.
+- **JUSTIFICATION:** The user supplied candidate prompt changes for assessment and requested comparison with `logs/plog0002/process-log.md`. Review was limited to the relevant Phase 3 realizations and ChatGPT-targeted prompt; no Phase 2 reassessment was needed. This comparison informs candidate deployment edits, not a claim that the externally edited prompt is the Phase 3 artifact.
 
 ## PROPAGATION / DISPOSITION
 
@@ -120,7 +120,7 @@ These samples are diagnostically selected, not a claim that every turn in the fu
 
 ## CANDIDATE REVISION CROSS-CHECK
 
-The separate assessment's ten candidates were compared with the runtime findings and the Phase 3 artifacts in `log/plog0002-Transcend.md`: the v0.7 source-informed realization and compilation (especially D004–D010, the behavioral quirks and stopping conditions, the rejected constant behaviors, and the final prompt), plus the later ChatGPT / GPT-5.6 deployment prompt and its target-specific guidance to reduce repetition and prescriptive pattern lists. The Phase 3 artifacts are evidence of intended realization; they do not establish that the externally edited session prompt was identical to them.
+The separate assessment's ten candidates were compared with the runtime findings and the Phase 3 artifacts in `logs/plog0002/process-log.md`: the v0.7 source-informed realization and compilation (especially D004–D010, the behavioral quirks and stopping conditions, the rejected constant behaviors, and the final prompt), plus the later ChatGPT / GPT-5.6 deployment prompt and its target-specific guidance to reduce repetition and prescriptive pattern lists. The Phase 3 artifacts are evidence of intended realization; they do not establish that the externally edited session prompt was identical to them.
 
 | Candidate | Further assessment | Disposition |
 |---|---|---|
@@ -157,3 +157,4 @@ The separate assessment's ten candidates were compared with the runtime findings
 - **DISPOSITIONS:** P4-D001 RECORD ONLY; P4-D002 ADAPT DOWNSTREAM (candidate deployment adjustment)
 - **CANDIDATE INTERVENTIONS:** Candidate revisions 1, 3, 4, 5, 6, and 7; additionally, label unverified game-mechanic inferences. Candidate 2 is optional reinforcement; 8–9 need no change; 10 remains unchanged.
 - **REMAINING UNCERTAINTIES:** Accuracy of the Scrap Collector explanation; behavior outside the sampled turns; effects of model and runtime settings; relationship between the externally edited deployment prompt and any earlier SOPPG artifacts.
+

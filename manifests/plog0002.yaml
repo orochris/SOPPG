@@ -1,0 +1,63 @@
+schema_version: 1
+run_id: plog0002
+revision: 1
+status: legacy_partial
+created_at_utc: {status: unknown, reason: original_run_timestamp_not_recorded}
+updated_at_utc: "2026-09-25"
+subject: Transcend
+run_type: production_and_evaluation
+workflow:
+  name: SOPPG
+  version: {status: unknown, reason: no_release_version_recorded}
+  git_commit: {status: unknown, reason: not_captured}
+  phases: [0, 1, 2, 3, 4]
+  operator: {status: unknown, reason: legacy_record_does_not_identify_operator}
+  notes: "Production handoff, deployment conversation, and Phase 4 assessment are represented in the checked-in files."
+platform:
+  provider: {status: known, value: OpenAI}
+  platform: {status: known, value: ChatGPT}
+  interface: {status: known, value: web_session}
+  api_mode: {status: not_applicable, reason: assessed_session_was_ChatGPT_web}
+model:
+  name: {status: unknown, reason: assessment_does_not_establish_model_version}
+  version_or_revision: {status: unknown, reason: assessment_explicitly_says_model_version_not_established}
+  weights: {status: not_applicable, reason: hosted_chatgpt_session}
+  artifact: {status: not_applicable, reason: hosted_chatgpt_session}
+inference:
+  temperature: {status: unknown, reason: runtime_configuration_not_established}
+  top_p: {status: unknown, reason: runtime_configuration_not_established}
+  top_k: {status: unknown, reason: runtime_configuration_not_established}
+  min_p: {status: not_applicable, reason: hosted_chatgpt_session_setting_not_exposed}
+  max_output_tokens: {status: unknown, reason: runtime_configuration_not_established}
+  context_size: {status: unknown, reason: runtime_configuration_not_established}
+  seed: {status: unknown, reason: runtime_configuration_not_established}
+  other: []
+tools:
+  - name: web_search
+    status: observed
+    notes: "Conversation capture includes a web-search tool result; configuration details are not recorded."
+environment:
+  runtime: {status: known, value: ChatGPT web}
+  runtime_version: {status: unknown, reason: not_captured}
+  hardware: {status: not_applicable, reason: hosted_service}
+  notes: "The Phase 4 report says the deployed prompt was edited outside SOPPG before being sent as the session's initial message."
+inputs:
+  - role: process_log
+    path: logs/plog0002/process-log.md
+    notes: "Phase 0–4 SOPPG production process log and handoff record; not proof the externally edited session prompt is identical."
+artifacts:
+  - role: gem-log
+    path: logs/plog0002/gem-log.md
+    notes: "Optional Gem workflow record: Gem Adapter run using gemadapter.md v0.2 and corpus-builder gembuilder.md v0.2, including the deployed Gem process/output."
+  - role: conversation_log
+    path: logs/plog0002/conversation.md
+    notes: "Contains the actual session-specific initial prompt and subsequent conversation."
+  - role: conversation_report
+    path: logs/plog0002/conversation-report.md
+    notes: "Deployment observation report; explicitly records uncertainty about model/version and runtime configuration."
+prompts:
+  - role: deployed_prompt
+    path: DeployedPrompts/plog0002-Transcend.md
+    notes: "Exact session-specific prompt extracted from the opening user message in the conversation capture; externally edited before deployment."
+change_note: "Initial legacy inventory; does not claim the session prompt is a verified Phase 3 compilation."
+

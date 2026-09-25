@@ -1,0 +1,65 @@
+schema_version: 1
+run_id: plogNNNN
+revision: 1
+status: draft # draft | complete | legacy_partial
+created_at_utc: "YYYY-MM-DDThh:mm:ssZ"
+updated_at_utc: "YYYY-MM-DDThh:mm:ssZ"
+subject: "character / project target"
+run_type: production # production | evaluation | deployment | research | other
+workflow:
+  name: SOPPG
+  version:
+    status: unknown
+    reason: no_release_version_recorded
+  git_commit:
+    status: unknown
+    reason: not_captured
+  phases: []
+  operator: ""
+  notes: ""
+platform:
+  provider: ""
+  platform: ""
+  interface: ""
+  api_mode:
+    status: unknown
+    reason: not_captured
+model:
+  name: ""
+  version_or_revision:
+    status: unknown
+    reason: provider_did_not_expose
+  weights:
+    status: not_applicable
+    reason: hosted_model
+  artifact:
+    status: not_applicable
+    reason: hosted_model
+inference:
+  temperature: {status: unknown, reason: not_captured}
+  top_p: {status: unknown, reason: not_captured}
+  top_k: {status: unknown, reason: not_captured}
+  min_p: {status: unknown, reason: not_captured}
+  max_output_tokens: {status: unknown, reason: not_captured}
+  context_size: {status: unknown, reason: not_captured}
+  seed: {status: unknown, reason: not_captured}
+  other: []
+tools: []
+environment:
+  runtime: {status: unknown, reason: not_captured}
+  runtime_version: {status: unknown, reason: not_captured}
+  hardware: {status: unknown, reason: not_captured}
+  notes: ""
+inputs: []
+artifacts: []
+prompts: []
+change_note: ""
+
+# For each input/artifact/prompt, use:
+# - role: process_log | process_report | gem-log | conversation_log | conversation_report |
+#        deployed_prompt |
+#        research | evidence | core | adapter | deployment | audit | source_snapshot | other
+#   path: repository/relative/path (or locator for an external input)
+#   source_run_id: earlier run, when this artifact came from another run
+#   notes: optional context
+# For model settings, use {status: known, value: ...}, or {status: unknown|not_recorded|not_applicable, reason: ...}.

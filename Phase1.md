@@ -17,6 +17,19 @@ Phase 1 does **not** construct the character model.
 
 ---
 
+## LANGUAGE SETS AND PROCESS LANGUAGE
+
+Keep these language sets distinct:
+
+- **WORKING LANGUAGE** — default to the language of the user's initial target-character request, considered by language rather than by the character name or source title. Use it for user-facing process narration and explanations unless the user specifies another language. If materially multilingual and unclear, ask or state a minimal, reversible assumption.
+- **SPECIFICATION LANGUAGE** — the language in which this phase's rules and canonical schema are written (English in this specification). Preserve canonical section names, field names, IDs, and controlled values exactly as defined by the Phase specification. Explain them in the Working Language as needed; translation must not change the procedure or evidence standard.
+- **SOURCE LANGUAGE(S)** — the original language(s) of works and evidence sources. Record per source where known; retain original excerpts and identify translations or glosses as such.
+- **TARGET-REALIZATION LANGUAGE(S)** — intended persona/deployment language(s), determined separately. The Working Language does not set the target voice.
+
+Research and present evidence accessibly in the Working Language while preserving its original wording, provenance, and scope. Do not treat translation, localization, or a language choice by itself as character behavior; assess such effects as presentation or version evidence where relevant.
+
+---
+
 ## INPUTS
 
 Required:
@@ -267,11 +280,17 @@ Preserve conflicts instead of smoothing them away.
 
 - CHARACTER:
 - RESEARCH SCOPE:
-- SOURCE LANGUAGE:
+- SOURCE LANGUAGES:
 - SOURCE / WORK:
 - CONTINUITY / VERSION:
 - CORPUS STATE:
 - RESEARCH STATUS:
+
+### OPTIONAL
+
+- WORKING LANGUAGE:
+
+Record it when explicitly selected, different from the default, or materially relevant to user-facing research presentation. It does not change the source corpus or source-language evidence.
 
 ### SOURCE / WORK RULE
 

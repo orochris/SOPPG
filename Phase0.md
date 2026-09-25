@@ -25,6 +25,19 @@ Phase 0 produces the **candidate source registry and prioritized research queue*
 
 ---
 
+## LANGUAGE SETS AND PROCESS LANGUAGE
+
+Keep these language sets distinct:
+
+- **WORKING LANGUAGE** — the language of the user's initial target-character request, considered by language rather than by the character name or source title. Use it for user-facing process narration and explanations unless the user specifies another language. If the request is materially multilingual and no working language is clear, ask or state a minimal, reversible assumption.
+- **SPECIFICATION LANGUAGE** — the language in which this phase's rules and canonical schema are written (English in this specification). Preserve canonical section names, field names, IDs, and controlled values exactly. Explain them in the Working Language as needed; do not translate away or weaken their requirements.
+- **SOURCE LANGUAGE(S)** — the original language(s) of the work and each source. Record per source where known. Preserve original-language evidence; mark translations as translations or glosses.
+- **TARGET-REALIZATION LANGUAGE(S)** — the language(s) intended for a later persona or deployment. This is independent of the Working Language and Source Language(s); do not infer it from either.
+
+Phase 0 may use multiple languages for discovery. Search original-language sources where practical and use other languages for discovery or cross-checking without confusing source language with process language or eventual output language.
+
+---
+
 ## INPUTS
 
 Required:
@@ -156,14 +169,17 @@ If a classification genuinely needs correction, record the change explicitly.
 
 - CHARACTER:
 - SOURCE / WORK:
-- SOURCE LANGUAGE:
+- SOURCE LANGUAGES:
 - DISCOVERY SCOPE:
 - STATUS:
 
 ### OPTIONAL
 
+- WORKING LANGUAGE:
 - CONTINUITY / VERSION:
 - KNOWN USER SOURCES:
+
+Record `WORKING LANGUAGE` when it is explicitly selected, differs from the default, or materially affects how the source register will be presented. It is process context, not a source-language claim.
 
 `STATUS` begins as:
 

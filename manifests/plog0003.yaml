@@ -1,0 +1,83 @@
+schema_version: 1
+run_id: plog0003
+revision: 1
+status: complete
+created_at_utc: {status: unknown, reason: original_run_timestamp_not_recorded}
+updated_at_utc: "2026-09-25T08:46:58Z"
+subject: "田中あすか / Asuka Tanaka — Hibike! Euphonium"
+run_type: production_and_evaluation
+workflow:
+  name: SOPPG
+  version: {status: unknown, reason: no_release_version_recorded}
+  git_commit: {status: unknown, reason: not_captured}
+  phases: [0, 1, 2, 3, 4]
+  operator: {status: unknown, reason: not_recorded}
+  notes: "Consolidated Phase 0–4 production record, Gem research handoff, Korean Kumiko-focused RP prompt, captured conversation, and subsequent prompt evaluation. Phase 4 is audited; a downstream prompt adjustment is recorded as a candidate and was not applied to the exported prompt."
+platform:
+  provider: {status: unknown, reason: execution_platform_not_recorded}
+  platform: {status: unknown, reason: execution_platform_not_recorded}
+  interface: {status: unknown, reason: execution_interface_not_recorded}
+  api_mode: {status: unknown, reason: not_captured}
+model:
+  name: {status: unknown, reason: conversation_record_does_not_identify_model}
+  version_or_revision: {status: unknown, reason: not_captured}
+  weights: {status: unknown, reason: model_type_not_established}
+  artifact: {status: unknown, reason: model_artifact_not_established}
+inference:
+  temperature: {status: unknown, reason: not_captured}
+  top_p: {status: unknown, reason: not_captured}
+  top_k: {status: unknown, reason: not_captured}
+  min_p: {status: unknown, reason: not_captured}
+  max_output_tokens: {status: unknown, reason: not_captured}
+  context_size: {status: unknown, reason: not_captured}
+  seed: {status: unknown, reason: not_captured}
+  other: []
+tools:
+  - name: web_search
+    status: observed
+    notes: "Phase 0–1 research log and Gem log record web search as used; search configuration is not recorded."
+  - name: youtube_search_and_transcript_access
+    status: observed
+    notes: "Gem log records dedicated YouTube search and retrieval of auto-generated Japanese transcripts for selected scenes."
+environment:
+  runtime: {status: unknown, reason: conversation_runtime_not_recorded}
+  runtime_version: {status: unknown, reason: not_captured}
+  hardware: {status: unknown, reason: runtime_environment_not_established}
+  notes: "The conversation capture contains the RP interaction but does not identify the host, model, or inference settings."
+inputs:
+  - role: other
+    path: Initialprompt.md
+    notes: "Starting request for the Asuka character workflow."
+  - role: other
+    path: Phase0.md
+    notes: "Phase 0 research instructions used by this workflow."
+  - role: other
+    path: Phase1.md
+    notes: "Phase 1 evidence instructions used by this workflow."
+  - role: other
+    path: Phase2.md
+    notes: "Phase 2 character-model instructions used by this workflow."
+  - role: other
+    path: Phase3.md
+    notes: "Phase 3 compilation instructions used by this workflow."
+  - role: other
+    path: Phase4.md
+    notes: "Phase 4 sample assessment instructions used for the runtime assessment."
+artifacts:
+  - role: process_log
+    path: logs/plog0003/process-log.md
+    notes: "Consolidated Phase 0–4 production trace, final compiled prompt source, and Phase 4 assessment."
+  - role: gem-log
+    path: logs/plog0003/gem-log.md
+    notes: "Gem research corpus, reconciliation, and handoff materials."
+  - role: conversation_log
+    path: logs/plog0003/conversation.md
+    notes: "Captured Korean RP conversation with the deployed Asuka persona."
+  - role: audit
+    path: logs/plog0003/prompt-evaluation.md
+    notes: "SOPPG-independent evaluation using the prompt, supplied side-by-side comparison, user-stated comic intent, and captured conversation."
+prompts:
+  - role: deployed_prompt
+    path: DeployedPrompts/plog0003-Asuka-Tanaka.md
+    notes: "Exact prompt block exported from FINAL PERSONA PROMPT in the process log; verified to match the source block."
+change_note: "Initial complete manifest created after the production/evaluation materials were consolidated. Original run timestamp, platform, model, and inference settings were not recorded and remain unknown."

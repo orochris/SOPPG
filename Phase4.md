@@ -31,6 +31,19 @@ Phase 4 is optional.
 
 ---
 
+## LANGUAGE SETS AND PROCESS LANGUAGE
+
+Keep these language sets distinct:
+
+- **WORKING LANGUAGE** — default to the language of the user's initial target-character request, considered by language rather than by the character name or source title. Use it for user-facing assessment and explanations unless the user specifies another language. If materially multilingual and unclear, ask or state a minimal, reversible assumption.
+- **SPECIFICATION LANGUAGE** — the language in which this phase's rules and canonical schema are written (English in this specification). Preserve canonical section names, field names, IDs, disposition values, and audit labels exactly as defined here. Explain them in the Working Language without changing their requirements.
+- **SOURCE LANGUAGE(S)** — languages of the deployed prompt's supporting sources, where consulted. Keep source quotations and their translations distinguishable.
+- **TARGET-REALIZATION LANGUAGE(S)** — language(s) actually intended and represented in the supplied generation sample. Assess that realization in context; do not treat the Working Language or source language as the deployed output language unless independently established.
+
+When a user cue, prompt, and generation use different languages, record which language each uses when it materially affects interpretation. Assess observable meaning and pragmatic function, including localization effects where relevant, rather than judging equivalence by literal translation alone.
+
+---
+
 ## INPUTS
 
 ### ESSENTIAL
@@ -250,6 +263,8 @@ Prefer concrete description over generalized character judgment.
 `CONTEXT`
 
 Include only context necessary to interpret the observation.
+
+When materially different, identify the language of the user cue, deployed instruction, and generated sample. `WORKING LANGUAGE` remains the language used for the assessment discussion; it is not evidence of the target-realization language.
 
 `EVIDENCE`
 

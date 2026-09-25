@@ -1,0 +1,59 @@
+schema_version: 1
+run_id: plog0001
+revision: 1
+status: legacy_partial
+created_at_utc: {status: unknown, reason: original_run_timestamp_not_recorded}
+updated_at_utc: "2026-09-25"
+subject: Fem!Draco Malfoy
+run_type: production_and_evaluation
+workflow:
+  name: SOPPG
+  version: {status: unknown, reason: no_release_version_recorded}
+  git_commit: {status: unknown, reason: not_captured}
+  phases: [0, 1, 2, 3, 4]
+  operator: {status: unknown, reason: legacy_record_does_not_identify_operator}
+  notes: "Legacy receipt reconstructed from checked-in process and assessment files."
+platform:
+  provider: {status: unknown, reason: not_identified_for_all_run_stages}
+  platform: {status: unknown, reason: not_identified_for_all_run_stages}
+  interface: {status: unknown, reason: not_identified_for_all_run_stages}
+  api_mode: {status: unknown, reason: not_captured}
+model:
+  name: {status: known, value: "Gemma 4 26B A4B (local runtime test; not necessarily all phases)"}
+  version_or_revision: {status: unknown, reason: not_captured}
+  weights: {status: unknown, reason: report_identifies_local_model_but_not_weight_source_or_quantization}
+  artifact: {status: unknown, reason: model_file_not_recorded}
+inference:
+  temperature: {status: unknown, reason: not_captured}
+  top_p: {status: unknown, reason: not_captured}
+  top_k: {status: unknown, reason: not_captured}
+  min_p: {status: unknown, reason: not_captured}
+  max_output_tokens: {status: unknown, reason: not_captured}
+  context_size: {status: unknown, reason: not_captured}
+  seed: {status: unknown, reason: not_captured}
+  other: []
+tools: []
+environment:
+  runtime: {status: unknown, reason: report_does_not_name_runtime}
+  runtime_version: {status: unknown, reason: not_captured}
+  hardware: {status: unknown, reason: not_captured}
+  notes: "The report identifies a local Gemma test, but gives no runtime configuration receipt."
+inputs: []
+artifacts:
+  - role: conversation_log
+    path: logs/plog0001/conversation.md
+    notes: "Deployment conversation with an LLM using the resultant persona prompt; includes prompt context."
+  - role: conversation_report
+    path: logs/plog0001/conversation-report.md
+    notes: "Post-deployment observation report about the persona conversation."
+  - role: process_log
+    path: logs/plog0001/process-log.md
+    notes: "Phase 0–4 SOPPG production process log."
+  - role: process_report
+    path: logs/plog0001/process-report.md
+    notes: "Post-process assessment of the Phase 0–4 SOPPG production process."
+prompts:
+  - role: deployed_prompt
+    notes: "The legacy record describes the deployment prompt but does not preserve an exact standalone prompt artifact; do not reconstruct it from report summaries."
+change_note: "Initial legacy inventory; details are limited to repository evidence."
+

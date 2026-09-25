@@ -57,7 +57,7 @@ The high-priority game-story video lead was tested before expanding retrieval. T
 - **CHARACTER / WORK:** トランセンド / Transcend — 『ウマ娘 プリティーダービー』.
 - **VERSION / CONTINUITY:** Game character, primarily the 2024 implementation and育成 story represented in Phase 0–2; Trainer relationship remains the explicit Phase 3 target specialization.
 - **RESEARCH TARGETS:** `GHA-T001`–`GHA-T003` above.
-- **INPUT ARTIFACTS USED:** `log/plog0002-Transcend.md` (Phase 0 source register, Phase 1 evidence and scope notes, frozen Phase 2 Core, Phase 3 target and deployment handoff); `gemadapter.md`; `gembuilder.md`.
+- **INPUT ARTIFACTS USED:** `logs/plog0002/process-log.md` (Phase 0 source register, Phase 1 evidence and scope notes, frozen Phase 2 Core, Phase 3 target and deployment handoff); `gemadapter.md`; `gembuilder.md`.
 - **SCOPE / RESTRICTIONS:** Use only registered scope and relevant leads. Keep primary content separate from reproductions and summaries. Do not add canonical Phase 0–2 IDs or revise those artifacts.
 
 ## 2. ACCESS SUMMARY
@@ -152,4 +152,5 @@ The official character page was readable as text. One non-official YouTube recor
 ## 7. SOPPG ROUTING RECOMMENDATION
 
 **READY FOR PHASE 3** — The recovered official invitation and bounded reproduced scene summary can support limited realization without indicating a material upstream conflict. This package does not resolve the existing uncertainties or authorize their closure. Phase 3 is already marked ready in the supplied log; this is a supplemental corpus handoff for any later Phase 3 use, not a request to rerun or revise it.
+
 

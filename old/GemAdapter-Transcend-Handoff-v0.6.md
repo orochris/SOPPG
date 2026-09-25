@@ -1,6 +1,6 @@
 # GEM BUILDER HANDOFF
 
-This is the Gem Builder's primary run input, prepared only from `gemadapter.md` v0.6 and `log/plog0002-Transcend.md`. It represents the supplied SOPPG record; it is not new character evidence, a Core revision, a Phase 3 recompilation, or a deployment prompt.
+This is the Gem Builder's primary run input, prepared only from `gemadapter.md` v0.6 and `logs/plog0002/process-log.md`. It represents the supplied SOPPG record; it is not new character evidence, a Core revision, a Phase 3 recompilation, or a deployment prompt.
 
 - **CHARACTER / WORK:** トランセンド / Transcend — 『ウマ娘 プリティーダービー』.
 - **VERSION / CONTINUITY:** Game character, centered on the 2024 implementation and育成 story. Phase 1 distinguishes 2024 game-character material from 2024–2026 fan reception.
@@ -114,4 +114,5 @@ The supplied Phase 1 record says full Japanese primary dialogue is not searchabl
 ## HANDOFF STATUS
 
 `READY TO HAND OFF`
+
 

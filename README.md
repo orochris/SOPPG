@@ -140,6 +140,8 @@ The intermediate artifacts exist because they are useful places to catch unsuppo
 
 ## The Artifacts
 
+Each production or evaluation run should also have a machine-readable receipt recording its inputs, outputs, prompt identity, platform/model details, and artifact provenance. See [`manifests/README.md`](manifests/README.md) for the run scheme and [`manifests/template.yaml`](manifests/template.yaml) to start a receipt.
+
 ### Source Research
 
 Establish what material is being used, where it came from, what coverage it provides, and where the gaps are.

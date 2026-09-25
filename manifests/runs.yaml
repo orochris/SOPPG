@@ -1,0 +1,14 @@
+schema_version: 1
+runs:
+  - run_id: plog0001
+    status: legacy_partial
+    manifest: manifests/plog0001.yaml
+    subject: Fem!Draco Malfoy
+  - run_id: plog0002
+    status: legacy_partial
+    manifest: manifests/plog0002.yaml
+    subject: Transcend
+  - run_id: plog0003
+    status: complete
+    manifest: manifests/plog0003.yaml
+    subject: "田中あすか / Asuka Tanaka"

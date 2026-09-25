@@ -21,6 +21,19 @@ They must not silently redefine the Core.
 
 ---
 
+## LANGUAGE SETS AND PROCESS LANGUAGE
+
+Keep these language sets distinct:
+
+- **WORKING LANGUAGE** — default to the language of the user's initial target-character request, considered by language rather than by the character name or source title. Use it for user-facing process narration and explanations unless the user specifies another language. If materially multilingual and unclear, ask or state a minimal, reversible assumption.
+- **SPECIFICATION LANGUAGE** — the language in which this phase's rules and canonical schema are written (English in this specification). Preserve canonical section names, field names, IDs, controlled values, and the rules defined here. Explanations may use the Working Language but must not alter the specification.
+- **SOURCE LANGUAGE(S)** — the original language(s) of the evidence. Preserve original-language voice evidence and identify translations or glosses. Record language-specific contradictions or adaptations as scoped uncertainties rather than averaging them.
+- **TARGET-REALIZATION LANGUAGE(S)** — intended later persona/deployment language(s), independent of the Working Language and excluded from the Core unless the fact itself is source-grounded character information.
+
+The Core is language-independent characterization, not an instruction to speak in the Working Language or a translated voice. Keep source-grounded voice distinct from later target-language realization.
+
+---
+
 ## INPUTS
 
 Required:
