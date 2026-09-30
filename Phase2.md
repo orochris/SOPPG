@@ -11,6 +11,8 @@ Transform Phase 1 evidence into a **frozen, evidence-grounded Core Character Mod
 
 The Core captures the smallest useful set of stable character mechanisms and persistent, source-grounded character descriptors needed to recognize and faithfully represent the character across contexts.
 
+The Phase 1 corpus may include official adaptations and concrete secondary research. The Core may use their evidence without treating all sources as equally authoritative: preserve provenance, distinguish source report from interpretation, and keep version-specific characterization scoped. A general Core should be based on supported recurring material across its declared scope; a feature established only in one adaptation remains version-specific or uncertain.
+
 It is a semantic character specification, not a finished deployment persona and not a runtime state store.
 
 The Core may describe behavioral mechanisms, meaningful modulation, source-grounded voice, embodiment, and persistent character facts or invariants.
@@ -174,6 +176,8 @@ It is not sufficient characterization by itself.
 Every substantive Core claim must trace to Phase 1 evidence.
 
 Do not import a familiar archetype and retrofit evidence around it.
+
+Secondary evidence may inform a mechanism when it describes concrete, recoverable behavior, but it remains secondary. Repeated summaries or interpretations do not become direct evidence through repetition. Prefer primary corroboration where reasonably accessible and retain uncertainty when it is not.
 
 ---
 

@@ -7,7 +7,7 @@
 
 ## PURPOSE
 
-Collect, verify, organize, and calibrate evidence from the **selected Phase 0 source corpus** so that Phase 2 can construct an evidence-grounded Core Character Model.
+Collect, verify, organize, and calibrate evidence from the **selected Phase 0 source corpus**, expanding it when material coverage gaps warrant, so that Phase 2 can construct an evidence-grounded Core Character Model.
 
 Phase 1 answers:
 
@@ -46,7 +46,7 @@ Optional:
 - source-scope restrictions
 - explicitly marked user observations
 
-Do not silently add unselected sources.
+Do not use an unregistered source as evidence. Phase 1 may autonomously discover and register additions under the expansion rule in Section 15, subject to the user's source restrictions.
 
 Do not invent missing constraints.
 
@@ -161,6 +161,8 @@ Use inherited Phase 0 `P0-SRC` IDs exactly as supplied.
 Do not silently rename, reclassify, or replace Phase 0 sources.
 
 If a source classification genuinely appears incorrect, record the issue explicitly in `SOURCE-SCOPE NOTES` or `RESEARCH AUDIT`.
+
+When Phase 1 discovers a useful source not in the inherited registry, it may return to the Phase 0 registry step and add the source under a new `P0-SRC` ID before using it. Preserve Phase 0 classifications and record any correction explicitly. Include the registered addition in `SELECTED SOURCE CORPUS`.
 
 ## 1.7 EVIDENCE REFERENCE RULE
 
@@ -339,6 +341,10 @@ This is a **registry reference**, not a second source-discovery phase.
 ### USER EXCLUSIONS
 
 - [source IDs removed by user, if any]
+
+### PHASE 1 ADDITIONS
+
+- [newly registered P0-SRC IDs added under the Section 15 expansion rule, if any]
 
 Use the Phase 0 source descriptions as authoritative.
 
@@ -724,6 +730,32 @@ This is a research aid, not part of the character model.
 
 # 15. RESEARCH STRATEGY
 
+## Coverage-triggered corpus expansion
+
+After the first evidence pass, assess whether a coverage gap materially limits the requested initial or general character model. If so, decide autonomously whether a plausible complementary source is likely to improve coverage.
+
+Expand the corpus when both conditions hold:
+
+1. the gap concerns evidence that could materially affect the model, such as ordinary behavior, variation, relationships, development, voice, or a relevant version difference; and
+2. a reasonably accessible source is likely to add concrete coverage rather than duplicate existing material.
+
+Do not expand when the user has restricted the work to a named source, version, or primary-only corpus, or when the candidate is unlikely to change the evidence picture. Follow the user's restriction. If a restriction is ambiguous and materially affects the source choice, ask a concise clarification.
+
+When expansion is warranted:
+
+1. return to the Phase 0 source registry step;
+2. add each candidate under a new `P0-SRC` ID, recording its type, access, coverage, content, research value, authority, version, and limitations as applicable;
+3. classify whether it is evidence-eligible or discovery-only;
+4. add evidence-eligible sources to `SELECTED SOURCE CORPUS` before extracting evidence;
+5. preserve source version and provenance in every evidence entry; and
+6. revisit affected evidence, coverage, conflicts, and scope notes.
+
+Do not silently add sources or silently promote discovery-only sources to evidentiary use. Official adaptations are primary evidence for their own versions; do not merge their evidence into another version without a scoped comparison. Secondary sources may contribute concrete observations to the initial working model, but retain `SECONDARY` provenance and distinguish reported events from the source author's interpretation. Corroborate with primary material where accessible.
+
+Repeat the coverage check after a material expansion. Stop when remaining gaps are unlikely to materially change the working model, no plausible complementary sources remain accessible, or user restrictions bound the scope. Exhaustive discovery is not required.
+
+If no expansion is warranted, continue with the selected corpus and record material remaining gaps. An unverified or inaccessible candidate may be listed as a source gap / candidate, but must not be used as evidence.
+
 When the selected corpus leaves important gaps, use the Phase 0 source map to determine whether:
 
 - an included source can be mined further;
@@ -731,13 +763,7 @@ When the selected corpus leaves important gaps, use the Phase 0 source map to de
 - a user-added source is needed;
 - another Phase 0 discovery pass is warranted.
 
-Do not silently expand the evidentiary corpus.
-
-When a genuinely valuable new source is discovered, record it as:
-
-> **NEW SOURCE CANDIDATE — RETURN TO PHASE 0**
-
-unless the user has explicitly permitted Phase 1 discovery.
+Apply the coverage-triggered corpus expansion rule above. Phase 1 discovery is permitted by default for an initial or general character model, subject to explicit user restrictions and prior corpus registrations.
 
 ---
 
@@ -816,6 +842,7 @@ External fact is not automatically character evidence.
 - PRESENTATION / CHARACTER DISTINCTION:
 - PREMATURE CHARACTERIZATION:
 - UNSUPPORTED CLAIMS:
+- DISCOVERY EXPANSION CHECK:
 
 Each uses:
 
@@ -889,10 +916,12 @@ When executing Phase 1:
 9. Keep relationship-specific evidence scoped.
 10. Keep voice evidence separate from target-language realization.
 11. Record important gaps rather than filling them.
-12. Do not silently add sources.
-13. Do not construct the Core.
-14. Complete the audit.
-15. Mark `READY FOR PHASE 2` only when the evidence base is reasonably usable.
+12. After the first evidence pass, run the coverage-triggered expansion check in Section 15.
+13. Register any added sources under new Phase 0 `P0-SRC` IDs before using them; update the selected corpus and affected evidence records.
+14. Keep discovery-only sources out of the evidentiary corpus unless formally registered and selected.
+15. Do not construct the Core.
+16. Complete the audit, including the expansion decision and its rationale.
+17. Mark `READY FOR PHASE 2` only when the evidence base is reasonably usable; otherwise leave the status `OPEN` and identify the blocking coverage gaps.
 
 ---
 

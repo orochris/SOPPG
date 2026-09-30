@@ -667,6 +667,10 @@ When source content cannot be verified, say so.
 
 When external research is available, search broadly enough to find **unusually useful sources**, not merely the most prominent results.
 
+For an initial, general character profile or personality model, do not stop after locating a basic official profile. Deliberately search relevant official adaptations and high-value secondary material as well as the original work. An adaptation is a primary source for its own version; record it separately from the source work. Secondary sources may help locate scenes and identify recurring characterization, but their authority and research value must remain distinct.
+
+Respect any user restriction to a named source, version, language, or primary-only corpus. In the absence of such a restriction, the default discovery scope is the character across materially relevant official versions, supplemented by useful secondary research. Discovery should be broad enough to find complementary coverage, not exhaustive for its own sake.
+
 Search combinations may include:
 
 - character name + character analysis
@@ -800,11 +804,11 @@ Phase 0 passes:
 
 to Phase 1.
 
-The **selected corpus becomes authoritative for Phase 1**.
+The selected corpus is the authoritative **starting corpus** for Phase 1.
 
-Phase 1 must not silently add discovered sources.
+Phase 1 may autonomously expand the corpus when its evidence-coverage check finds a material gap and a plausible complementary source may fill it, unless the user has restricted source discovery or additions. Every added source must first be registered in the Phase 0 source registry with a new `P0-SRC` ID, source classification, access state, scope, content, authority, and research value. Phase 1 must record the addition in its selected-corpus register and preserve the source's version and provenance. No source may be used as evidence before registration.
 
-If Phase 1 identifies a potentially valuable unlisted source, it should record it as a research gap / new candidate rather than silently incorporating it.
+A source marked `DISCOVERY ONLY` remains a navigation aid unless it is explicitly promoted through a registered corpus update. The added source must not silently replace or reclassify an existing source.
 
 A source marked:
 
@@ -834,8 +838,9 @@ When executing Phase 0:
 12. Do not resolve characterization questions prematurely.
 13. Keep inaccessible or unverified material clearly marked.
 14. Apply any explicit user source preferences.
-15. Complete the audit.
-16. Mark `READY FOR PHASE 1` when a usable corpus exists.
+15. Recommend a complementary initial corpus; identify adaptations as version-specific sources and secondary sources by their distinct authority and research value.
+16. Complete the audit.
+17. Mark `READY FOR PHASE 1` when a usable starting corpus exists.
 
 ---
 
