@@ -596,4 +596,4 @@ A valid run may terminate without upstream review, candidate revision, or host-p
 
 Do not append general commentary after `PHASE 4 STATUS`.
 
-The Phase 4 artifact is the deliverable.
+The Phase 4 artifact is the deliverable, presented in the current chat under the shared output-location rule in `Initialprompt.md`.

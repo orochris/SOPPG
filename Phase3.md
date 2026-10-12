@@ -1354,4 +1354,4 @@ Begin directly with `# PERSONA BUILDER — PHASE 3` and follow the canonical sec
 
 Do not add free-form top-level sections or commentary after `PHASE 3 STATUS`.
 
-The Phase 3 artifact is the deliverable; the `FINAL PERSONA PROMPT` is the standalone deployment artifact.
+The Phase 3 artifact is the deliverable, presented in the current chat under the shared output-location rule in `Initialprompt.md`. The `FINAL PERSONA PROMPT` must be self-contained for deployment; “standalone” describes its usability, not a separate file requirement.

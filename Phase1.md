@@ -937,4 +937,4 @@ Do not add free-form top-level sections.
 
 Do not append general commentary after `PHASE 1 STATUS`.
 
-The Phase 1 artifact is the deliverable.
+The Phase 1 artifact is the deliverable, presented in the current chat under the shared output-location rule in `Initialprompt.md`.

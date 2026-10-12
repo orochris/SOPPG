@@ -19,6 +19,10 @@ Identify:
 - stopping point;
 - missing inputs that must be requested from the user.
 
+## Output location
+
+By default, produce phase process artifacts in the current chat. Do not create or modify workspace files for phase outputs unless the user explicitly requests file output. Repository run folders, filenames, and artifact layouts describe storage conventions when file output is requested; they do not imply a request or permission to persist phase artifacts. This rule applies to every phase, including optional phases.
+
 When invoked:
 1. Determine which specification governs the requested phase.
 2. Check whether its required inputs are present.

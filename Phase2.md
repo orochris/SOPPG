@@ -909,4 +909,4 @@ Do not add free-form top-level sections.
 
 Do not append general commentary after `CORE STATUS`.
 
-The Phase 2 artifact is the deliverable.
+The Phase 2 artifact is the deliverable, presented in the current chat under the shared output-location rule in `Initialprompt.md`.

@@ -846,12 +846,6 @@ When executing Phase 0:
 
 # 24. OUTPUT DISCIPLINE
 
-## OUTPUT LOCATION
-
-Produce the Phase 0 process artifact in the current chat. Do not create or modify workspace files for Phase 0 outputs unless the user explicitly requests file output.
-
-Repository run folders and artifact layouts describe where outputs may be stored when file output is requested; they do not imply a request or permission to persist a Phase 0 artifact.
-
 Begin directly with:
 
 `# PERSONA BUILDER — PHASE 0`
@@ -862,4 +856,4 @@ Do not add free-form top-level sections.
 
 Do not append general commentary after `PHASE 0 STATUS`.
 
-The Phase 0 artifact is the deliverable.
+The Phase 0 artifact is the deliverable, presented in the current chat under the shared output-location rule in `Initialprompt.md`.
